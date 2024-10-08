@@ -1,11 +1,11 @@
 import Image from "next/image";
 import meetingImage from '@/public/images/meeting1.png'; 
-import docker from '@/public/images/docker.png'; 
-import amplitude from '@/public/images/amplitude.png';
-import atlassian from '@/public/images/atlassian.png';
-import basecamp from '@/public/images/basecamp.png';
-import dropbox from '@/public/images/dropbox.png';
-import thematic from '@/public/images/thematic.png';
+// import docker from '@/public/images/docker.png'; 
+// import amplitude from '@/public/images/amplitude.png';
+// import atlassian from '@/public/images/atlassian.png';
+// import basecamp from '@/public/images/basecamp.png';
+// import dropbox from '@/public/images/dropbox.png';
+// import thematic from '@/public/images/thematic.png';
 import FeatureCard from '@/components/FeatureCard';
 import aw from '@/public/images/aw.png';  // New image
 import ess from '@/public/images/ess.png';  // New image
@@ -15,7 +15,7 @@ import aar from '@/public/images/aar.png';  // New image
 import { FaCogs, FaUser, FaChartLine, FaDatabase, FaChartPie } from 'react-icons/fa'; // Importing icons
 import HowItWorksPage from '@/components/HowItWorksPage';
 import FAQs from '@/components/FAQs';
-import PricingPlan from '@/components/PricingPlan';
+// import PricingPlan from '@/components/PricingPlan';
 import Footer from '@/components/Footer';
 
 
