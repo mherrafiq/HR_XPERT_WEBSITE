@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  @apply text-[var(--foreground)] bg-[var(--background)] font-sans;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom styles converted from app.css */
+
+.App {
+  @apply text-center;
+}
+
+.header {
+  @apply bg-white py-4 px-8 shadow-md sticky top-0 z-50;
+}
+
+.navbar {
+  @apply flex justify-between items-center;
+}
+
+.logo {
+  @apply text-xl font-bold;
+}
+
+.nav-links {
+  @apply list-none flex gap-6;
+}
+
+.nav-links li {
+  @apply inline-block;
+}
+
+.nav-links a {
+  @apply no-underline text-gray-800 text-base;
+}
+
+.nav-buttons {
+  @apply flex gap-4;
+}
+
+.login-btn {
+  @apply py-4 px-8 border-none rounded-lg cursor-pointer text-lg font-bold bg-blue-700 text-white transition-colors duration-300 ease-in-out;
+}
+
+.login-btn:hover {
+  @apply bg-blue-500;
+}
+
+.demo-btn {
+  @apply py-4 px-8 border-none rounded-lg cursor-pointer text-lg font-bold bg-blue-800 text-white transition-colors duration-300 ease-in-out;
+}
+
+.demo-btn:hover {
+  @apply bg-blue-500;
+}
+
+.hero-section {
+  @apply flex justify-center items-center py-12 relative bg-gray-100;
+}
+
+.blue-box {
+  @apply bg-blue-700 text-white p-8 rounded-lg shadow-lg z-10 max-w-lg text-center;
+}
+
+.hero-content {
+  @apply flex flex-col items-center text-center;
+}
+
+.hero-image {
+  @apply w-full;
+}
+
+.hero-text {
+  @apply mb-5;
+}
+
+.hero-text h1 {
+  background: linear-gradient(to right, #0055CC, #33B2C3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @apply text-center text-5xl;
+}
+
+.hero-text span {
+  @apply text-blue-600 block text-sm font-bold text-center;
+}
+
+.hero-text p {
+  @apply text-xl mb-6;
+}
+
+.get-started-btn {
+  @apply py-4 px-8 border-none rounded-lg cursor-pointer text-lg font-bold bg-blue-700 text-white transition-colors duration-300 ease-in-out;
+}
+
+.get-started-btn:hover {
+  @apply bg-blue-500;
+}
+
+.hero-image img {
+  @apply w-[200%] h-auto; /* Takes 90% of the container width */
+  @apply w-full h-auto shadow-2xl; /* Try a stronger shadow */
+  /* Or define a custom shadow with more visibility */
+  @apply shadow-[0px_8px_20px_rgba(0,0,0,0.5)]; /* Increase shadow blur and opacity */
+}
+
+
+
+.trusted-companies {
+  @apply text-center;
+}
+
+.trusted-companies p {
+  @apply text-xl mb-4;
+}
+
+.companies-logos {
+  @apply flex justify-center flex-wrap;
+}
+
+.company {
+  @apply flex items-center mx-4;
+}
+
+.company img {
+  @apply mr-2;
+}
+
+.companies-logos img {
+  @apply max-w-xs opacity-70;
+}
+
+.features-section {
+  @apply py-12 bg-gray-100;
+}
+
+.feature-cards-container {
+  @apply flex justify-around flex-wrap gap-5;
+}
+
+.feature-card {
+  @apply basis-1/3;
+}
+
+.features-section h2 {
+  background: linear-gradient(to right, #082e52, #0a678f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @apply text-center text-2xl font-bold mb-10 inline-block; 
+  position: relative; /* Important for positioning the pseudo-element */
+}
+
+
+.features-section h2::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px; /* Adjust the height of the underline */
+  background: linear-gradient(to right, #124474, #0b678f);
+  position: absolute; /* Position it absolutely */
+  bottom: -5px; /* Adjust to move it below the text */
+  left: 0; /* Align it to the left */
+  border-radius: 2px; /* Optional: rounded corners for the underline */
+}
+
+/* Add this to your global.css for gradient text */
+.gradient-text {
+  background: linear-gradient(to right, #0048a6, #2d91e3); /* Light and dark blue gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo {
+  font-size: 1.5rem; /* Increase font size */
+  font-weight: bold;
+  background: linear-gradient(to right, #0048a6, #2d91e3); /* Light to dark blue gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.logo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #0048a6, #2d91e3); /* Same gradient for shine effect */
+  opacity: 0.2; /* Transparent overlay for shine effect */
+  filter: blur(5px); /* Slight blur for glowing effect */
+  z-index: -1; /* Behind the text */
+}
+

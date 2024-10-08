@@ -1,0 +1,132 @@
+/* Footer.css */
+.footer {
+    background: linear-gradient(180deg, #00A3E0 0%, #003D79 100%);
+    padding: 40px; /* Increased padding for more height */
+    color: white;
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height automatically based on content */
+    min-height: 200px; /* Minimum height for the footer */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+}
+
+.footer-left {
+    flex: 1; /* Left side takes space as needed */
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin-right: 20px; /* Add space between left and right sections */
+}
+
+.footer-right {
+    flex: 1; /* Right side takes space as needed */
+    text-align: left; /* Align text to the left for better readability */
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+}
+
+.transform-text {
+    font-size: 24px; /* Increased font size */
+    margin-bottom: 10px;
+}
+
+.stay-informed {
+    font-size: 20px; /* Adjust font size for Stay Informed */
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+.description-text {
+    color: white; /* Change text color to white */
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex; /* Use flexbox for horizontal alignment */
+    gap: 15px; /* Space between icons */
+    margin-top: 15px; /* Add space above the icons */
+}
+
+.social-icon {
+    color: white; /* Icon color */
+    font-size: 24px; /* Adjust size of icons */
+    cursor: pointer; /* Change cursor on hover */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-icon:hover {
+    color: #FF991F; /* Change color on hover */
+}
+
+.email-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align email input and button to the start */
+    margin-bottom: 20px; /* Add space below the input */
+}
+
+.footer-email-input {
+    padding: 15px; /* Increased padding for better look */
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 250px; /* Adjust input width */
+}
+
+.footer-button {
+    padding: 15px 25px; /* Increased padding for the button */
+    background-color: #FF991F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-button:hover {
+    background-color: #FFAA33; /* Slightly darker for hover effect */
+}
+
+.footer-links {
+    margin-top: 20px; /* Add space above the links section */
+    display: flex; /* Use flexbox for column layout */
+    justify-content: space-between; /* Space out columns */
+}
+
+.footer-column {
+    flex: 1; /* Each column takes equal width */
+    margin-right: 20px; /* Add space between columns */
+}
+
+.footer-heading {
+    font-size: 18px; /* Font size for headings */
+    margin: 15px 0 5px; /* Margin for spacing */
+    color: #FF991F; /* Heading color */
+}
+
+.footer-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 5px 0 15px; /* Margin for spacing between lists */
+}
+
+.footer-list li {
+    margin-bottom: 5px; /* Space between list items */
+    cursor: pointer; /* Change cursor on hover */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-list li:hover {
+    color: #FF991F; /* Change color on hover */
+}
+
+
+/* Footer.css */
+.copyright-text {
+    font-size: 14px; /* Adjust font size as needed */
+    color: white; /* Ensure text color is white */
+    margin-top: 200px; /* Space above the copyright text */
+}
