@@ -8,7 +8,7 @@
 
 /* Heading Section */
 .heading-container {
-    background: linear-gradient(90deg, #e0f7ff, #cceeff); 
+    background: linear-gradient(90deg, #e0f7ff, #cceeff);
     border-radius: 20px;
     box-shadow: 0 8px 15px rgba(0, 0, 255, 0.2);
     padding: 10px;
@@ -18,7 +18,7 @@
 
 .heading {
     font-size: 1.2rem;
-    color: #004080; 
+    color: #004080;
 }
 
 /* Empower heading */
@@ -33,33 +33,34 @@
 /* Flex container for side-by-side layout */
 .boxes-container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
+    align-items: stretch;
+    gap: 2.375rem;
+    justify-content: center;
 }
 
-/* Box 1 */
+/* Box Styles */
 .box1 {
-    background: white;
+    background: linear-gradient(180deg, rgba(0, 163, 224, 0.1) 0%, rgba(0, 61, 121, 0.1) 100%);
+
+    
     border-radius: 20px;
     padding: 20px;
-    flex: 1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    /* flex: 1; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Rectangle common styles */
 .rectangle {
-    background-color: #0F47A6;
+    
     border-radius: 10px;
     padding: 15px 20px;
     margin-bottom: 20px;
     color: white;
-    position: relative;
     display: flex;
     align-items: center;
 }
 
-/* Spacing and adjustments for the top rectangle */
+/* Specific styles for the top rectangle */
 .rectangle-top {
     justify-content: space-between;
 }
@@ -67,18 +68,16 @@
 /* Vector Icon Container */
 .vector-icon-container {
     display: flex;
-    align-items: center; /* Vertically center the icon */
+    align-items: center;
     width: 25%;
     height: 25%;
 }
 
-/* Vector Icon Styling */
+/* Vector Icon */
 .vector-icon {
-    color: white; /* Icon color */
-    font-size: 1.5rem; /* Size of the icon */
-    margin-right: 10px; /* Space between the icon and the rectangles */
-    width: 25%;
-    height: 25%;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 10px;
 }
 
 /* Right side thin rectangles (horizontal) */
@@ -86,8 +85,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-left: auto; /* Push thin rectangles to the right */
-   
+    margin-left: auto;
 }
 
 .thin-rectangle-horizontal {
@@ -97,7 +95,7 @@
     height: 10px;
 }
 
-/* Profile circle with vector icon */
+/* Profile circle */
 .profile-circle {
     width: 40px;
     height: 40px;
@@ -109,7 +107,7 @@
     margin-left: 15px;
 }
 
-/* Profile image circle */
+/* Profile image */
 .profile-image {
     width: 100%;
     height: 100%;
@@ -127,14 +125,16 @@
 .profile-name {
     font-size: 1.2rem;
     font-weight: bold;
+    color: #141113;
 }
 
 .profile-role {
     font-size: 1rem;
-    color: #cceeff;
+    color: #141113;
     margin-bottom: 10px;
 }
 
+/* Task List */
 .task-list {
     margin-top: 10px;
 }
@@ -145,17 +145,14 @@
     margin-bottom: 5px;
     display: flex;
     align-items: center;
-    width: 50%;
-    height: 50%;
+    color: #020202;
 }
 
-/* Adjust tick icon size */
+/* Check icon styling */
 .check-icon {
     font-size: 1rem;
     margin-right: 8px;
-    color: #fff;
-    width: 25%;
-    height: 25%;
+    color: #62c23d;
 }
 
 /* Box 2 */
@@ -165,39 +162,27 @@
     text-align: left;
     border-radius: 10px;
     flex: 1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Box 2 title */
 .box2-title {
-    background-color: #0F47A6;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+    font-size: 1.5rem;       /* Title font size */
+    color: #003366;          /* Title color */
+    margin-bottom: 10px;     /* Space below the title */
+    font-weight: bold; 
 }
 
+/* Box 2 description */
 .box2-description {
-    font-size: 1rem;
-    color: black;
-    margin-bottom: 10px;
+    font-size: 0.9rem;       /* Font size */
+    color: #666;             /* Text color */
+    line-height: 1.5;        /* Line height for readability */
+}
+/* Box 2 description container */
+.box2-description-container {
+    text-align: left;       /* Align text to the left */
+          /* Add margin to the left to shift it right */
+    margin-top: 10px;       /* Optional: Add some spacing above the text */
 }
 
-
-/* Notification Icon Container */
-.notification-icon-container {
-    display: flex;
-    align-items: center; /* Center icon vertically */
-    margin-left: 10px; /* Space between the vector icon and notification icon */
-    width: 25%;
-    height: 25%;
-}
-
-/* Notification Icon Styling */
-.notification-icon {
-    /* width: 25%;
-    height: 25%; */
-    color: white; /* Icon color */
-    font-size: 1.5rem; /* Size of the notification icon */
-    
-}

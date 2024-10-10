@@ -1,9 +1,9 @@
 import React from 'react';
-import './HowItWorksPage.css';
+import './HowItWorksPage.css'; // Update the path according to your structure
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faVectorSquare, faCheckCircle, faBell } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
-import user1 from '@/public/images/user1.png'
+import user1 from '@/public/images/user1.png';
 
 const HowItWorksPage = () => {
     return (
@@ -17,16 +17,16 @@ const HowItWorksPage = () => {
             <div className="empower-heading">
                 Empower Employees and Automate HR Processes
             </div>
-            <p className="description">
+            <p className="description mb-10">
                 Donec tempor risus ut magna egestas, ut placerat ligula aliquet. Morbi fermentum felis in urna suscipit.
             </p>
 
             {/* Flex Container for Side-by-Side Boxes */}
-            <div className="boxes-container">
+            <div className="boxes-container w-full">
                 {/* Box 1: Horizontal Alignment */}
                 <div className="box1">
                     {/* Rectangle 1 */}
-                    <div className="rectangle rectangle-top">
+                    <div className="rectangle rectangle-top bg-[#0F47A6]">
                         <div className='flex justify-between w-full'>
                             {/* Vector Icon */}
                             <div className="vector-icon-container">
@@ -34,7 +34,6 @@ const HowItWorksPage = () => {
                             </div>
 
                             {/* Thin Rectangles */}
-
                             <div className='flex items-center'>
                                 <div className="right-rectangles-horizontal">
                                     <div className="thin-rectangle-horizontal"></div>
@@ -47,28 +46,23 @@ const HowItWorksPage = () => {
                                 </div>
 
                                 {/* Profile Image Circle */}
-                                <div className="profile-circle ">
-                                    <Image src={user1} alt="Profile" className="profile-image rounded-[50%] " />
+                                <div className="profile-circle">
+                                    <Image src={user1} alt="Profile" className="profile-image rounded-[50%]" />
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                     {/* Rectangle 2 */}
-                    <div className="rectangle flex flex-col ">
-
-                        {/* <div className="profile-info"> */}
-                               
-                       <div className='flex items-center'>
-                        <div className="profile-circle">
-                            <Image src={user1} alt="Syed Abbas" className="profile-image rounded-[50%]" />
-                        </div>
-                        <div className="profile-info">
-
-                            <span className="profile-name">Syed Ahad</span>
-                            <span className="profile-role">Web Development</span>
-                        </div>
+                    <div className="rectangle flex flex-col bg-white">
+                        <div className='flex items-center'>
+                            <div className="profile-circle">
+                                <Image src={user1} alt="Syed Abbas" className="profile-image rounded-[50%]" />
+                            </div>
+                            <div className="profile-info">
+                                <span className="profile-name">Syed Ahad</span>
+                                <span className="profile-role">Web Development</span>
+                            </div>
                         </div>
 
                         <div className="task-list">
@@ -83,10 +77,9 @@ const HowItWorksPage = () => {
                             </div>
                         </div>
                     </div>
-                    {/* </div> */}
 
                     {/* Rectangle 3 */}
-                    <div className="rectangle">
+                    <div className="rectangle bg-white">
                         <div className="profile-circle">
                             <Image src={user1} alt="Syed Ahmed" className="profile-image rounded-[50%]" />
                         </div>
@@ -97,34 +90,29 @@ const HowItWorksPage = () => {
                     </div>
                 </div>
 
-                {/* Box 2 */}
-                <div className="box1">
-                    <h3 className="box2-title">Create a Great Experience Before and After Joining</h3>
-                    <p className="box2-description">
-                        Donec tempor risus ut magna egestas, ut placerat ligula aliquet. Morbi fermentum felis in urna suscipit, non tincidunt lorem malesuada.
-                    </p>
-                    <p className="box2-description">
-                        Donec tempor risus ut magna egestas, ut placerat ligula aliquet. Morbi fermentum felis in urna suscipit, non tincidunt lorem malesuada.
-                    </p>
-                    <p className="box2-description">
-                        Donec tempor risus ut magna egestas, ut placerat ligula aliquet. Morbi fermentum felis in urna suscipit, non tincidunt lorem malesuada.
-                    </p>
-                    <p className="box2-description">
-                        Donec tempor risus ut magna egestas, ut placerat ligula aliquet. Morbi fermentum felis in urna suscipit, non tincidunt lorem malesuada.
-                    </p>
-                    <p className="box2-description">
-                        Donec tempor risus ut magna egestas, ut placerat ligula aliquet. Morbi fermentum felis in urna suscipit, non tincidunt lorem malesuada.
-                    </p>
-                    <p className="box2-description">
-                        Donec tempor risus ut magna egestas, ut placerat ligula aliquet. Morbi fermentum felis in urna suscipit, non tincidunt lorem malesuada.
-                    </p>
-                    <p className="box2-description">
-                        Donec tempor risus ut magna egestas, ut placerat ligula aliquet. Morbi fermentum felis in urna suscipit, non tincidunt lorem malesuada.
-                    </p>
-                    <p className="box2-description">
-                        Donec tempor risus ut magna egestas, ut placerat ligula aliquet. Morbi fermentum felis in urna suscipit, non tincidunt lorem malesuada.
-                    </p>
+                {/* Box 2: Displaying text without container */}
+                <div className='flex flex-col w-[26rem]'>
+                    <h3 className="box2-title text-start">Create a Great Experience Before and After Joining</h3>
+                    <div className="box2-description-container">
+                        <p className="box2-description">
+                            Donec tempor risus ut magna egestas, ut placerat ligula aliquet. Morbi fermentum felis in urna suscipit, non tincidunt lorem malesuada.
+                        </p>
+                        <p className="box2-description">
+                            Donec tempor risus ut magna egestas, ut placerat ligula aliquet. Morbi fermentum felis in urna suscipit, non tincidunt lorem malesuada.
+                        </p>
+                        <p className="box2-description">
+                            Donec tempor risus ut magna egestas, ut placerat ligula aliquet. Morbi fermentum felis in urna suscipit, non tincidunt lorem malesuada.
+                        </p>
+                        <p className="box2-description">
+                            Donec tempor risus ut magna egestas, ut placerat ligula aliquet. Morbi fermentum felis in urna suscipit, non tincidunt lorem malesuada.
+                        </p>
+                        <p className="box2-description">
+                            Donec tempor risus ut magna egestas, ut placerat ligula aliquet. Morbi fermentum felis in urna suscipit, non tincidunt lorem malesuada.
+                        </p>
+                    </div>
                 </div>
+
+                {/* Add additional descriptions as needed */}
             </div>
         </div>
     );

@@ -23,6 +23,7 @@ import Footer from '@/components/Footer';
 
 
 
+
 export default function Home() {
   return (
     <div className="App">
@@ -151,9 +152,14 @@ export default function Home() {
 
 
       <div id='Footer'>
-      <Footer />[]
+      <Footer />
       </div>
 
+
+      
+
     </div>
+
+    
   );
 }

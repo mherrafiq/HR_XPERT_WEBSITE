@@ -1,113 +1,86 @@
 .feature-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 350px;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-  }
+  flex: 1 1 32%; /* 3 cards in one row, each taking 32% width */
+  margin: 0; /* No margin for close alignment */
+  padding: 0px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-  .image-container {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
 
-  .image-container img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-  }
-  
-  .content-container {
-    padding-top: 20px;
-    text-align: center;
-  }
 
-  .feature-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .image-box {
-    width: 100%;
-    height: auto; /* Make the box responsive */
-    overflow: hidden;  /* Ensure the image stays within bounds */
-    border-radius: 8px;
-  }
-  
-  .image {
-    object-fit: cover; /* Ensures the image covers the entire box */
-    border-radius: 8px;
-  }
-  
-  .content {
-    margin-top: 20px;
-  }
-  
-  h4 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-    color: #555;
-  }
-  
-  .learn-more-btn {
-    background-color: transparent;
-    color: #007bff;
-    border: none;
-    cursor: pointer;
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-  }
-  
-  .learn-more-btn .arrow {
-    margin-left: 5px;
-    transition: margin-left 0.3s ease;
-  }
-  
-  .learn-more-btn:hover .arrow {
-    margin-left: 10px;
-  }
+.image-container {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 
-  .learn-more {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    margin-top: 10px;
-    color: #0c0f13;
-    cursor: pointer;
-  }
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
 
-  
+.content-container {
+  padding-top: 15px;
+  text-align: center;
+}
 
-  /* Title with icon */
-  .title-with-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px; /* Space between the icon and the title */
-  }
+.feature-card:hover {
+  transform: translateY(-10px);
+}
 
-  /* Bold text for title and Learn More */
-  .bold-text {
-    font-weight: bold;
-  }
+.feature-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Cards ko close karne ke liye start se align karna */
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  gap: 0px; /* Remove gap between cards */
+}
 
-  /* Adjusted size and spacing of the icon */
+
+
+/* Cards ko ek dusre se chipkane ke liye */
+.feature-card-container .feature-card {
+  margin-right: -5px; /* Right margin ko negative value dene se cards chipak jaayenge */
+}
+
+.feature-card-container .feature-card:nth-child(3n) {
+  margin-right: 0; /* No margin after every 3rd card */
+}
+
+
+.feature-card-container .feature-card:nth-child(5) {
+  flex: 1 1 49%; /* 2 cards in the second row, taking 49% width each */
+}
+
+.learn-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+  color: #0c0f13;
+  cursor: pointer;
+}
+
+.title-with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Adjusted for better spacing */
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
 .title-with-icon .icon {
-    font-size: 24px; /* Adjust size as needed */
-  }
+  font-size: 20px;
+}
