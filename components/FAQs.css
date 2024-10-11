@@ -68,3 +68,22 @@
     width: 100%; 
     font-weight: bold;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .faqs-header {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    .faqs-text {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    .faqs-answer {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+
+    .faqs-main-box {
+        width: 20%; /* Adjust main box width for smaller screens */
+    }
+}
