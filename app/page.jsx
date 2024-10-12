@@ -36,15 +36,15 @@ export default function Home() {
           </ul>
           <div className="nav-buttons">
             {/* <button className="login-btn">Log In</button> */}
-            <a href='#Footer' className="demo-btn"> Book Free Demo</a>
-          </div>
+            <a href='#Footer' className="demo-btn">Book Free Demo</a>
+            </div>
         </nav>
       </header>
 
       <section className="hero-section">
         <div className="hero-content">
           <div className="hero-text">
-            <h1> Revolutionize Your HR Tasks with Our </h1>
+            <h1 > Revolutionize Your HR Tasks with Our </h1>
             <h1><span className="text-6xl !text-5xl">Smart Assistant</span></h1>
             <p className="mt-4">Streamline recruitment, manage talent, and automate HR processes effortlessly.</p>
             {/* <button className="get-started-btn">Get Started</button> */}

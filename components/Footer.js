@@ -1,4 +1,3 @@
-// Footer.js
 import React from 'react';
 import './Footer.css'; // Ensure this file exists
 //import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'; // Import icons
@@ -77,3 +76,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

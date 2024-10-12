@@ -35,7 +35,8 @@ body {
 }
 
 .navbar {
-  @apply flex justify-between items-center;
+  @apply flex justify-between items-center gap-2;
+
 }
 
 .logo {
@@ -65,6 +66,14 @@ body {
 .login-btn:hover {
   @apply bg-blue-500;
 }
+
+/* @media only screen and (max-width: 600px) {
+  .demo-btn {
+    @apply py-4 px-8 border-none rounded-lg cursor-pointer text-lg font-bold bg-blue-800 text-white transition-colors duration-300 ease-in-out;
+    
+  }
+  
+} */
 
 .demo-btn {
   @apply py-4 px-8 border-none rounded-lg cursor-pointer text-lg font-bold bg-blue-800 text-white transition-colors duration-300 ease-in-out;

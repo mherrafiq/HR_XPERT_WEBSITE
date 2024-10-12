@@ -8,6 +8,8 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
+
 .image-container {
   width: 100%;
   height: 180px;
@@ -42,6 +44,8 @@
   gap: 0px; /* Remove gap between cards */
 }
 
+
+
 /* Cards ko ek dusre se chipkane ke liye */
 .feature-card-container .feature-card {
   margin-right: -5px; /* Right margin ko negative value dene se cards chipak jaayenge */
@@ -50,6 +54,7 @@
 .feature-card-container .feature-card:nth-child(3n) {
   margin-right: 0; /* No margin after every 3rd card */
 }
+
 
 .feature-card-container .feature-card:nth-child(5) {
   flex: 1 1 49%; /* 2 cards in the second row, taking 49% width each */
@@ -80,27 +85,3 @@
   font-size: 20px;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .feature-card {
-    flex: 1 1 100%; /* Full width for each card on mobile */
-    margin-bottom: 20px; /* Spacing between cards on mobile */
-  }
-
-  .image-container {
-    height: 150px; /* Adjust height for mobile */
-  }
-
-  .title-with-icon {
-    flex-direction: column; /* Stack icon and title vertically */
-    align-items: center; /* Center align */
-  }
-
-  .title-with-icon .icon {
-    font-size: 24px; /* Increase icon size for better visibility */
-  }
-
-  .learn-more {
-    flex-direction: column; /* Stack learn more elements vertically */
-  }
-}

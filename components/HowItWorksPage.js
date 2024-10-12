@@ -22,7 +22,7 @@ const HowItWorksPage = () => {
             </p>
 
             {/* Flex Container for Side-by-Side Boxes */}
-            <div className="boxes-container w-full">
+            <div className="boxes-container flex-col sm:flex-row w-full">
                 {/* Box 1: Horizontal Alignment */}
                 <div className="box1">
                     {/* Rectangle 1 */}
@@ -119,3 +119,4 @@ const HowItWorksPage = () => {
 };
 
 export default HowItWorksPage;
+
