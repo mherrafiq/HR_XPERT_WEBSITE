@@ -41,17 +41,13 @@
 /* Box Styles */
 .box1 {
     background: linear-gradient(180deg, rgba(0, 163, 224, 0.1) 0%, rgba(0, 61, 121, 0.1) 100%);
-
-    
     border-radius: 20px;
     padding: 20px;
-    /* flex: 1; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Rectangle common styles */
 .rectangle {
-    
     border-radius: 10px;
     padding: 15px 20px;
     margin-bottom: 20px;
@@ -167,21 +163,66 @@
 
 /* Box 2 title */
 .box2-title {
-    font-size: 1.5rem;       /* Title font size */
-    color: #003366;          /* Title color */
-    margin-bottom: 10px;     /* Space below the title */
-    font-weight: bold; 
+    font-size: 1.5rem;
+    color: #004080;
+    margin-bottom: 15px;
 }
 
 /* Box 2 description */
-.box2-description {
-    font-size: 0.9rem;       /* Font size */
-    color: #666;             /* Text color */
-    line-height: 1.5;        /* Line height for readability */
-}
-/* Box 2 description container */
 .box2-description-container {
-    text-align: left;       /* Align text to the left */
-          /* Add margin to the left to shift it right */
-    margin-top: 10px;       /* Optional: Add some spacing above the text */
+    display: flex;
+    flex-direction: column;
+}
+
+.box2-description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Adjust the flex direction for mobile */
+    .boxes-container {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 1rem; /* Reduce gap between boxes */
+    }
+
+    /* Reduce heading sizes */
+    .empower-heading {
+        font-size: 2rem; /* Smaller heading on mobile */
+    }
+
+    .heading {
+        font-size: 1rem; /* Smaller heading on mobile */
+    }
+
+    /* Box widths */
+    .box1, .box2 {
+        width: 100%; /* Full width on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for smaller screens */
+    .empower-heading {
+        font-size: 1.5rem; /* Even smaller on very small screens */
+    }
+
+    .box2-title {
+        font-size: 1.25rem; /* Smaller title on very small screens */
+    }
+
+    .box2-description {
+        font-size: 0.9rem; /* Smaller description text */
+    }
+
+    .profile-name {
+        font-size: 1rem; /* Smaller name text */
+    }
+
+    .profile-role {
+        font-size: 0.9rem; /* Smaller role text */
+    }
 }

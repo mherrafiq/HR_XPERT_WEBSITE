@@ -6,9 +6,8 @@
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s; /* Smooth transition on hover */
 }
-
-
 
 .image-container {
   width: 100%;
@@ -44,8 +43,6 @@
   gap: 0px; /* Remove gap between cards */
 }
 
-
-
 /* Cards ko ek dusre se chipkane ke liye */
 .feature-card-container .feature-card {
   margin-right: -5px; /* Right margin ko negative value dene se cards chipak jaayenge */
@@ -54,7 +51,6 @@
 .feature-card-container .feature-card:nth-child(3n) {
   margin-right: 0; /* No margin after every 3rd card */
 }
-
 
 .feature-card-container .feature-card:nth-child(5) {
   flex: 1 1 49%; /* 2 cards in the second row, taking 49% width each */
@@ -85,3 +81,19 @@
   font-size: 20px;
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+  .feature-card {
+    flex: 1 1 100%; /* Full width on smaller screens */
+    margin-bottom: 20px; /* Add space between cards */
+  }
+  
+  .image-container {
+    height: 120px; /* Adjust image height for mobile */
+  }
+  
+  .learn-more {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+  }
+}

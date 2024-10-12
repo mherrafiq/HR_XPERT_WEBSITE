@@ -45,10 +45,10 @@ const FAQs = () => {
 
             <div className="faqs-boxes-container">
                 {faqs.map((faq, index) => (
-                    <div className="faqs-box" key={index} onClick={() => toggleFAQ(index)} onMouseEnter={() => setExpandedIndex(index)} onMouseLeave={() => setExpandedIndex(null)}>
+                    <div className="faqs-box" key={index} onClick={() => toggleFAQ(index)}>
                         <div className="faqs-question">
                             <p className="faqs-text">{faq.question}</p>
-                            <FontAwesomeIcon icon={faChevronDown} className="faqs-icon" />
+                            <FontAwesomeIcon icon={faChevronDown} className={`faqs-icon ${expandedIndex === index ? 'rotated' : ''}`} />
                         </div>
                         {expandedIndex === index && <p className="faqs-answer">{faq.answer}</p>}
                     </div>

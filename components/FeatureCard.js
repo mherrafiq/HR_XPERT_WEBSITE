@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const FeatureCard = ({ title, description, image, icon }) => {
   return (
-    <div className="feature-card styl">
+    <div className="feature-card">
       {/* Image inside its own box */}
       <div className="image-container">
         <Image src={image} alt={`${title} image`} />
