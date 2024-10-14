@@ -33,7 +33,7 @@
     flex-direction: column; 
     align-items: flex-start; 
     cursor: pointer; /* Added cursor pointer for better UX */
-    transition: background 0.3s, height 0.3s; /* Transition for hover effect */
+    transition: background 0.3s; /* Transition for hover effect */
 }
 
 .faqs-box:hover {
